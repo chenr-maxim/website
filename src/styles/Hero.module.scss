@@ -19,6 +19,7 @@
 
     .introText {
       margin-top: 1em;
+      font-size: 22px;
     }
 
     .socials {
@@ -31,6 +32,30 @@
     h1 {
       font-weight: bold;
       margin: 0;
+    }
+  }
+}
+
+@media only screen and (1024px >= width) {
+  .heroContainer {
+    .introContainer {
+      font-size: 13px;
+
+      .introText {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media only screen and (2560px > width >= 1440px) {
+  .heroContainer {
+    .introContainer {
+      font-size: 18px;
+
+      .introText {
+        font-size: 18px;
+      }
     }
   }
 }
