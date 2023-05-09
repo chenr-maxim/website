@@ -1,0 +1,36 @@
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  height: inherit;
+
+  .profilePicContainer {
+    width: 75%;
+  }
+
+  .introContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 24px;
+    margin-left: 1em;
+    width: 100%;
+    row-gap: 12px;
+
+    .introText {
+      margin-top: 1em;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: row;
+      width: inherit;
+      column-gap: 12px;
+    }
+
+    h1 {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+}

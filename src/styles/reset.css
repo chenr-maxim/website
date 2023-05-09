@@ -1,0 +1,83 @@
+:root {
+  color-scheme: only light;
+  background-color: #faf9f6;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+a,
+li {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Visuelt Pro";
+  src: url("../../public/fonts/VisueltPro-Bold.ttf") format("truetype"),
+    url("../../public/fonts/VisueltPro-Bold.woff") format("woff"),
+    url("../../public/fonts//VisueltPro-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Visuelt Pro";
+  src: url("../../public/fonts/VisueltPro-Regular.ttf") format("truetype"),
+    url("../../public/fonts//VisueltPro-Regular.woff") format("woff"),
+    url("../../public/fonts//VisueltPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Visuelt Pro Medium";
+  src: url("../../public/fonts//VisueltPro-Medium.ttf") format("truetype"),
+    url("../../public/fonts//VisueltPro-Medium.woff") format("woff"),
+    url("../../public/fonts//VisueltPro-Medium.woff2") format("woff2");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "Visuelt Pro";
+  src: url("../../public/fonts//VisueltPro-Light.ttf") format("truetype"),
+    url("../../public/fonts//VisueltPro-Light.woff") format("woff"),
+    url("../../public/fonts//VisueltPro-Light.woff2") format("woff2");
+  font-weight: lighter;
+}

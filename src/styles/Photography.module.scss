@@ -1,0 +1,13 @@
+.photographyContainer {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+
+  .photosContainer {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
