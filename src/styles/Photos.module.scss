@@ -3,3 +3,10 @@
   width: 400px;
   height: 400px;
 }
+
+@media only screen and (width <= 1440px) {
+  .photoContainer {
+    width: 350px;
+    height: 350px;
+  }
+}
