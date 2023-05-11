@@ -1,0 +1,26 @@
+.aboutContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .aboutPicContainer {
+    flex-basis: 25%;
+  }
+
+  .aboutDescription {
+    display: flex;
+    row-gap: 1em;
+    flex-direction: column;
+    flex-basis: 25%;
+    font-size: 20px;
+    padding-left: 1em;
+
+    .aboutSocials {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 0.5em;
+    }
+  }
+}

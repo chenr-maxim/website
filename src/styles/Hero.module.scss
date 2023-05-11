@@ -5,16 +5,15 @@
   height: inherit;
 
   .profilePicContainer {
-    width: 75%;
+    max-width: 75%;
   }
 
   .introContainer {
     display: flex;
     flex-direction: column;
-    flex: 1;
     font-size: 24px;
     margin-left: 1em;
-    width: 100%;
+    max-width: 25%;
     row-gap: 12px;
 
     .introText {
