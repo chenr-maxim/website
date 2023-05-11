@@ -24,3 +24,11 @@
     }
   }
 }
+
+@media only screen and (1440px >= width) {
+  .aboutContainer {
+    .aboutDescription {
+      font-size: 12px;
+    }
+  }
+}
