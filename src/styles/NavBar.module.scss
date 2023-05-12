@@ -17,10 +17,15 @@
       list-style-type: none;
       text-align: center;
       width: 100%;
+
+      // > li:nth-child(3) {
+      //   padding-left: 10px;
+      // }
     }
   }
 }
 
+// laptop screen && anything smaller
 @media only screen and (1024px >= width) {
   .navbarContainer {
     font-size: 16px;
@@ -29,16 +34,20 @@
 
 @media only screen and (1440px > width >= 1024px) {
   .navbarContainer {
+    font-size: 16px;
+
     .navbarLinks {
-      width: 33vw;
+      width: 28vw;
     }
   }
 }
 
 @media only screen and (2560px > width >= 1440px) {
   .navbarContainer {
+    font-size: 18px;
+
     .navbarLinks {
-      width: 25vw;
+      width: 24vw;
     }
   }
 }
