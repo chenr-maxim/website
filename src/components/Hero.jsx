@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className={styles.heroContainer}>
       <div className={styles.profilePicContainer}>
-        <Image src={profilePic} alt="profile picture" />
+        <Image priority={true} src={profilePic} alt="profile picture" />
       </div>
       <div className={styles.introContainer}>
         <h1>Maxim Chen</h1>

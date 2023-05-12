@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.aboutPicContainer}>
-        <Image src={aboutPic} alt="about me picture" />
+        <Image priority={true} src={aboutPic} alt="about me picture" />
       </div>
       <div className={styles.aboutDescription}>
         Now residing in the San Francisco Bay Area, I am a software engineer
