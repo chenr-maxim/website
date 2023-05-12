@@ -21,6 +21,7 @@ const About = () => {
         Besides designing and coding, I&apos;m always discovering new bands and
         artists, listening to music, practicing guitar, taking photos, making
         coffee every morning and writing in my journal.
+        <br />
         <div className={styles.aboutSocials}>
           <Link href={"https://www.instagram.com/m520.n/"}>Instagram</Link>
           <Link href={"https://open.spotify.com/user/121781429"}>Spotify</Link>

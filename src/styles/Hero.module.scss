@@ -3,6 +3,7 @@
   flex-direction: row;
   width: inherit;
   height: inherit;
+  // -webkit-animation: fadein 2.5s;
 
   .profilePicContainer {
     max-width: 75%;
@@ -58,3 +59,12 @@
     }
   }
 }
+
+// @keyframes fadein {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }

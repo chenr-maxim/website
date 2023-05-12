@@ -7,8 +7,14 @@ const Photo = ({ photo }) => {
   console.log(photo, "individual photo");
   return (
     <div className={styles.photoContainer}>
-      <Image quality={60} fill src={photo.media_url} alt={photo.caption} />
-      {/* <div className={styles.photoDescription}>{photo.caption}</div> */}
+      <Image
+        quality={60}
+        fill
+        src={photo.media_url}
+        alt={photo.caption || "instagram photo caption"}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+      <div className={styles.caption}>{photo.caption}</div>
     </div>
   );
 };

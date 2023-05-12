@@ -12,7 +12,7 @@ export async function getStaticProps() {
     "caption",
     "media_url",
     "media_type",
-    "children{media_type,media_url}",
+    // "children{media_type,media_url}",
   ].join(",");
 
   const instagram_url = `https://graph.instagram.com/v16.0/${process.env.USER_ID}/media?fields=${fields}&access_token=${process.env.ACCESS_TOKEN}`;
