@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Photography from "@/src/components/Photography";
 import axios from "axios";
 
 export default function photos({ photosData }) {
-  return <Photography photosData={photosData.data} />;
+  return (
+    <Suspense fallback={<p> Loading Photos...</p>}>
+      <Photography photosData={photosData.data} />
+    </Suspense>
+  );
 }
 
 export async function getStaticProps() {

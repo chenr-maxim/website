@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "@/src/styles/Photos.module.scss";
 
 const Photo = ({ photo }) => {
-  console.log(photo, "individual photo");
   return (
     <div className={styles.photoContainer}>
       <Image
