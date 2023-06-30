@@ -21,7 +21,7 @@ export const navbarLinks = [
   },
 ];
 
-export const workExperience = [
+export const workExperienceLabels = [
   {
     title: "Software Engineer - Front End",
     company: "Hostfi",
