@@ -7,7 +7,7 @@ import CenteredLayout from "../components/Layout";
 const HeadHTML = () => {
   return (
     <Head>
-      <title>Maxim Chen&#39;s - Software Engineer</title>
+      <title>Maxim Chen - Software Engineer</title>
       <meta
         property="og.title"
         content="Maxim Chen - Software Engineer"
