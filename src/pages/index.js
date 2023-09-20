@@ -21,6 +21,7 @@ const HeadHTML = () => {
       <meta property="og.type" content="website" key="type" />
       <meta property="og.url" content="https://maximchen.com" key="url" />
       {/* <meta property="og.image"></meta> */}
+      <link rel="icon" type="image/jpg" href="/static/favicon.png" />
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="author" content="Maxim Chen" />
