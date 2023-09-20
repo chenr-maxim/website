@@ -15,5 +15,9 @@ export const CenteredLayout = ({ children }) => {
 };
 
 export const LinksLayout = ({ children }) => {
-  return <div>{children}</div>;
+  return (
+    <div className={styles.layoutContainer}>
+      <main>{children}</main>
+    </div>
+  );
 };

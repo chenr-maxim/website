@@ -46,19 +46,19 @@ export const workExperienceLabels = [
 
 export const socialLinks = [
   {
-    link: "Linkedin",
-    title: "https://www.linkedin.com/in/maximrchen",
+    title: "Linkedin",
+    url: "https://www.linkedin.com/in/maximrchen",
   },
   {
-    link: "Github",
-    title: "https://github.com/chenr-maxim",
+    title: "Github",
+    url: "https://github.com/chenr-maxim",
   },
   {
-    link: "Behance",
-    title: "https://www.behance.net/chenmaxim",
+    title: "Behance",
+    url: "https://www.behance.net/chenmaxim",
   },
   {
-    link: "Instagram",
-    title: "https://www.instagram.com/m520.n/",
+    title: "Instagram",
+    url: "https://www.instagram.com/m520.n/",
   },
 ];
