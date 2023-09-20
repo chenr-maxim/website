@@ -4,8 +4,6 @@ import { workExperienceLabels } from "../constants/labels";
 import styles from "../styles/Work.module.scss";
 
 const Experience = ({ title, company, date, description }) => {
-  console.log(title, "title");
-  console.log(description, "description");
   return (
     <div className={styles.experienceContainer}>
       <div className={styles.title}>

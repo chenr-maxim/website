@@ -27,10 +27,12 @@ export async function getStaticProps() {
     });
 
     if (!data) {
+      console.log(`data does not exist`);
       return { notFound: true };
     }
     return { props: { photosData: data } };
   } catch (err) {
+    console.log(`error fetching photo data`, err);
     return { notFound: true };
   }
 }
