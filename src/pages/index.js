@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "@/src/components/Layout";
 import Hero from "@/src/components/Hero";
+import CenteredLayout from "../components/Layout";
 
 const HeadHTML = () => {
   return (

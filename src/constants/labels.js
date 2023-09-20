@@ -43,3 +43,22 @@ export const workExperienceLabels = [
       "Using React and Javascript, to integrate Apple Pay API into their planned overhaul Next Generation payment check-out system for users to pay for viewing, and managing healthcare and insurance bills. Built up pieces of the Next Generation payment platform user-interface such as payment and credit card forms, and scaffold a mobile checkout experience in React-Native. Maintain and integrate Change Healthcare APIs such as member claims, payment status and transaction functionality into their current and Next Generation check-out experience",
   },
 ];
+
+export const socialLinks = [
+  {
+    link: "Linkedin",
+    title: "https://www.linkedin.com/in/maximrchen",
+  },
+  {
+    link: "Github",
+    title: "https://github.com/chenr-maxim",
+  },
+  {
+    link: "Behance",
+    title: "https://www.behance.net/chenmaxim",
+  },
+  {
+    link: "Instagram",
+    title: "https://www.instagram.com/m520.n/",
+  },
+];

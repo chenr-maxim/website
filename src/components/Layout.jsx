@@ -3,7 +3,9 @@ import NavBar from "@/src/components/NavBar";
 
 import styles from "@/src/styles/Layout.module.scss";
 
-const Layout = ({ children }) => {
+export const CenteredLayout = ({ children }) => {
+  console.log(children, "layout children");
+
   return (
     <div className={styles.layoutContainer}>
       <NavBar />
@@ -12,4 +14,6 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+export const LinksLayout = ({ children }) => {
+  return <div>{children}</div>;
+};
