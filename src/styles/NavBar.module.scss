@@ -60,8 +60,9 @@
   }
 }
 
-@media only screen and (width <= 600px) {
+@media only screen and (width <= 768px) {
   .navbarContainer {
+    padding: 10vh 0 36px 0;
     font-size: 12px;
 
     .navbarLinks {
