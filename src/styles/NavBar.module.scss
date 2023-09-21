@@ -59,3 +59,13 @@
     }
   }
 }
+
+@media only screen and (width <= 600px) {
+  .navbarContainer {
+    font-size: 12px;
+
+    .navbarLinks {
+      width: 100%;
+    }
+  }
+}
