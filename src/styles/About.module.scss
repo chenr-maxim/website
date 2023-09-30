@@ -32,3 +32,25 @@
     }
   }
 }
+
+@media only screen and (width < 768px) {
+  .aboutContainer {
+    flex-direction: column;
+
+    .aboutPicContainer {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+
+    .aboutDescription {
+      font-size: 13px;
+      padding: 1em 0 0 0;
+    }
+  }
+}
