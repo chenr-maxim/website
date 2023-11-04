@@ -62,3 +62,35 @@ export const socialLinks = [
     url: "https://www.instagram.com/m520.n/",
   },
 ];
+
+export const projectLabels = [
+  {
+    id: "coffeenote",
+    title: "Coffee Note",
+    description: `
+    coffee note is your personal coffee brewing log and companion. 
+    This project let's you keep track of the coffee you buy, logging
+    your daily brews, ratios and adding personal notes. And connect the perfect
+    song for that coffee.
+
+    coffee note is built with a react front-end and node.js/mongodb backend.  
+    Note: coffee note is intended for mobile applications.`,
+  },
+  {
+    id: "noted",
+    title: "Noted",
+    description: `
+    noted is a simple and easy to use note-taking application, that's designed in mind
+    to write down any ideas, thoughts and notes. With a simple to navigate folder
+    and note interface and experience. And easy to pick up features like categorizing, sharing,
+    saving, moving and deleting your notes. noted desktop version currently is a work in progress.`,
+  },
+  {
+    id: "socialtree",
+    title: "SocialTree",
+    description: `socialtree is a redesign of the modern smartlinks that are appearing all over the web.
+    Targeted towards people who want to share their socials in a concise and clean way. 
+    Designed in mind especially for artists/bands release new music, as clear way to share where to
+    find all their socials and how to check it out what's new.`,
+  },
+];
