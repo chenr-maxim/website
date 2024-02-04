@@ -8,7 +8,7 @@ const Photography = ({ photosData }) => {
 
   useEffect(() => {
     setPhotos(photosData);
-  }, [photosData]);
+  }, []);
 
   const photoList = photos.map((photo) => {
     return <Photo key={photo.id} photo={photo} />;
