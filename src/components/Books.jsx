@@ -14,10 +14,14 @@ const Books = ({ haveReadVolumesData, currReadingVolumeData }) => {
     return <Book key={book.id} book={book} />;
   });
 
+  const currentlyReadingBook = (
+    <Book key={currentlyReading.id} book={currentlyReading} />
+  );
+
   return (
     <div className={styles.booksContainer}>
       {bookList}
-
+      {currentlyReadingBook}
       <div style={{ width: `200px`, height: `200px` }}>
         <Loader />
       </div>

@@ -3,12 +3,12 @@ import Books from "@/src/components/Books";
 import axios from "axios";
 import { getVolumesData } from "../util/getVolumesData";
 
-export default function books({ haveReadVolumesData, currReadVolumesData }) {
+export default function books({ haveReadVolumesData, currReadVolumeData }) {
   return (
     <Suspense fallback={<p> Loading Books...</p>}>
       <Books
         haveReadVolumesData={haveReadVolumesData}
-        currReadVolumesData={currReadVolumesData}
+        currReadingVolumeData={currReadVolumeData}
       />
     </Suspense>
   );
@@ -33,7 +33,7 @@ export async function getStaticProps() {
     }
 
     const haveReadVolumesData = getVolumesData(bookshelfData[0]);
-    const currReadVolumeData = getVolumesData(bookshelfData[1]);
+    const currReadVolumeData = bookshelfData[1].items[0];
 
     return { props: { haveReadVolumesData, currReadVolumeData } };
   } catch (err) {
