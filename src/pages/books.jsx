@@ -1,39 +1,43 @@
 import React, { Suspense } from "react";
 import Books from "@/src/components/Books";
 import axios from "axios";
+import { getVolumesData } from "../util/getVolumesData";
 
-export default function books({ volumesData }) {
+export default function books({ haveReadVolumesData, currReadVolumesData }) {
   return (
     <Suspense fallback={<p> Loading Books...</p>}>
-      <Books booksData={volumesData} />
+      <Books
+        haveReadVolumesData={haveReadVolumesData}
+        currReadVolumesData={currReadVolumesData}
+      />
     </Suspense>
   );
 }
 
 export async function getStaticProps() {
-  const my_bookshelves_url = `https://www.googleapis.com/books/v1/users/${process.env.GOOGLE_BOOKS_USERID}/bookshelves/4/volumes?key=${process.env.GOOGLE_BOOKS_API_KEY}`;
-  const obj = { success: true };
+  const have_read_bookshelfUrl = `https://www.googleapis.com/books/v1/users/${process.env.GOOGLE_BOOKS_USERID}/bookshelves/4/volumes?key=${process.env.GOOGLE_BOOKS_API_KEY}`;
+  const curr_read_bookshelf = `https://www.googleapis.com/books/v1/users/${process.env.GOOGLE_BOOKS_USERID}/bookshelves/3/volumes?key=${process.env.GOOGLE_BOOKS_API_KEY}`;
   try {
-    const { data } = await axios.get(my_bookshelves_url);
+    const have_read_bookshelf_promise = await axios.get(have_read_bookshelfUrl);
+    const curr_read_bookshelf_promise = await axios.get(curr_read_bookshelf);
 
-    if (!data) {
-      console.log("data does not exist");
+    const bookshelfData = await Promise.all([
+      have_read_bookshelf_promise,
+      curr_read_bookshelf_promise,
+    ]).then(async function ([first, second]) {
+      return [first.data, second.data];
+    });
+
+    if (!bookshelfData) {
+      console.log("bookshelf data does not exist");
     }
 
-    const volumesData = data.items.reduce((acc, currItem) => {
-      if (currItem && currItem.volumeInfo) {
-        acc.push({
-          volumeInfo: currItem.volumeInfo,
-          id: currItem.id,
-        });
-      }
+    const haveReadVolumesData = getVolumesData(bookshelfData[0]);
+    const currReadVolumeData = getVolumesData(bookshelfData[1]);
 
-      return acc;
-    }, []);
-
-    return { props: { volumesData } };
+    return { props: { haveReadVolumesData, currReadVolumeData } };
   } catch (err) {
     console.log(`error fetching books data`, err);
-    return { notFound: true };
+    return { notFound: true, ...err };
   }
 }
