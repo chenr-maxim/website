@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Book from "./Book";
 
 import styles from "@/src/styles/Books.module.scss";
-import Loader from "./Loader";
 
 const Books = ({ haveReadVolumesData, currReadingVolumeData }) => {
   const [bookshelf, setBookshelf] = useState(haveReadVolumesData);
@@ -20,10 +19,13 @@ const Books = ({ haveReadVolumesData, currReadingVolumeData }) => {
 
   return (
     <div className={styles.booksContainer}>
-      {bookList}
-      {currentlyReadingBook}
-      <div style={{ width: `200px`, height: `200px` }}>
-        <Loader />
+      <div className={styles.currentlyReadingContainer}>
+        <span> Currently Reading </span>
+        {currentlyReadingBook}
+      </div>
+      <div className={styles.haveReadContainer}>
+        <span> Have Read </span>
+        <div className={styles.bookListContainer}>{bookList}</div>
       </div>
     </div>
   );

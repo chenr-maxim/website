@@ -2,10 +2,17 @@ import React, { Suspense } from "react";
 import Books from "@/src/components/Books";
 import axios from "axios";
 import { getVolumesData } from "../util/getVolumesData";
+import Loader from "../components/Loader";
 
 export default function books({ haveReadVolumesData, currReadVolumeData }) {
   return (
-    <Suspense fallback={<p> Loading Books...</p>}>
+    <Suspense
+      fallback={
+        <div style={{ width: `200px`, height: `200px` }}>
+          <Loader />
+        </div>
+      }
+    >
       <Books
         haveReadVolumesData={haveReadVolumesData}
         currReadingVolumeData={currReadVolumeData}
@@ -30,6 +37,7 @@ export async function getStaticProps() {
 
     if (!bookshelfData) {
       console.log("bookshelf data does not exist");
+      return { notFound: true };
     }
 
     const haveReadVolumesData = getVolumesData(bookshelfData[0]);

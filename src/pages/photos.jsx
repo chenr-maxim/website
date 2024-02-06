@@ -26,6 +26,8 @@ export async function getStaticProps() {
       headers: { "Accept-Encoding": "gzip,deflate,compress" },
     });
 
+    console.log(data, "data");
+
     if (!data) {
       console.log(`data does not exist`);
       return { notFound: true };
