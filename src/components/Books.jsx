@@ -9,20 +9,22 @@ const Books = ({ haveReadVolumesData, currReadingVolumeData }) => {
     currReadingVolumeData
   );
 
+  console.log(bookshelf, "bookshelf");
+
   const bookList = bookshelf.map((book) => {
     return <Book key={book.id} book={book} />;
   });
 
-  const currentlyReadingBook = (
-    <Book key={currentlyReading.id} book={currentlyReading} />
-  );
+  // const currentlyReadingBook = (
+  //   <Book key={currentlyReading.id} book={currentlyReading} />
+  // );
 
   return (
     <div className={styles.booksContainer}>
-      <div className={styles.currentlyReadingContainer}>
+      {/* <div className={styles.currentlyReadingContainer}>
         <span> Currently Reading </span>
         {currentlyReadingBook}
-      </div>
+      </div> */}
       <div className={styles.haveReadContainer}>
         <span> Have Read </span>
         <div className={styles.bookListContainer}>{bookList}</div>

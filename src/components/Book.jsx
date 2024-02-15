@@ -6,8 +6,6 @@ import styles from "@/src/styles/Books.module.scss";
 const Book = ({ book }) => {
   const volumeInfo = book.volumeInfo;
 
-  console.log(book);
-
   return (
     <div className={styles.bookContainer}>
       <Image
@@ -17,7 +15,7 @@ const Book = ({ book }) => {
         style={{ objectFit: "cover" }}
         src={volumeInfo.imageLinks.thumbnail}
       />
-      {volumeInfo.title}
+      {/* {volumeInfo.title} */}
     </div>
   );
 };

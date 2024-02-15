@@ -22,28 +22,26 @@ export default function books({ haveReadVolumesData, currReadVolumeData }) {
 }
 
 export async function getStaticProps() {
-  const have_read_bookshelfUrl = `https://www.googleapis.com/books/v1/users/${process.env.GOOGLE_BOOKS_USERID}/bookshelves/4/volumes?key=${process.env.GOOGLE_BOOKS_API_KEY}`;
+  const have_read_bookshelfUrl = `https://www.googleapis.com/books/v1/users/${process.env.GOOGLE_BOOKS_USERID}/bookshelves/4/volumes?key=${process.env.GOOGLE_BOOKS_API_KEY}&maxResults=40`;
   const curr_read_bookshelf = `https://www.googleapis.com/books/v1/users/${process.env.GOOGLE_BOOKS_USERID}/bookshelves/3/volumes?key=${process.env.GOOGLE_BOOKS_API_KEY}`;
   try {
     const have_read_bookshelf_promise = await axios.get(have_read_bookshelfUrl);
     const curr_read_bookshelf_promise = await axios.get(curr_read_bookshelf);
 
-    const bookshelfData = await Promise.all([
+    const [haveReadVolumesData, currReadingVolumeData] = await Promise.all([
       have_read_bookshelf_promise,
       curr_read_bookshelf_promise,
     ]).then(async function ([first, second]) {
-      return [first.data, second.data];
+      const cleanedHaveReadData = getVolumesData(first.data);
+      return [cleanedHaveReadData, second.data];
     });
 
-    if (!bookshelfData) {
+    if (!haveReadVolumesData && !currReadingVolumeData) {
       console.log("bookshelf data does not exist");
       return { notFound: true };
     }
 
-    const haveReadVolumesData = getVolumesData(bookshelfData[0]);
-    const currReadVolumeData = bookshelfData[1].items[0];
-
-    return { props: { haveReadVolumesData, currReadVolumeData } };
+    return { props: { haveReadVolumesData, currReadingVolumeData } };
   } catch (err) {
     console.log(`error fetching books data`, err);
     return { notFound: true, ...err };
