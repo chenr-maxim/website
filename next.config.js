@@ -9,6 +9,16 @@ const nextConfig = {
         hostname: "*.cdninstagram.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "books.google.com",
+        port: "",
+      },
+      {
+        protocol: "http",
+        hostname: "books.google.com",
+        port: "",
+      },
     ],
   },
 };

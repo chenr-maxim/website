@@ -1,0 +1,40 @@
+.booksContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1em;
+
+  span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .currentlyReadingContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .haveReadContainer {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      margin-bottom: 20px;
+    }
+
+    .bookListContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+  }
+}
+
+.bookContainer {
+  position: relative;
+  object-fit: cover;
+  min-width: 144px;
+  max-width: 148px;
+  min-height: 212px;
+}
