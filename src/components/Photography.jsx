@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Photo from "./Photo";
 
 import styles from "@/src/styles/Photography.module.scss";
+
+import Photo from "./Photo";
 
 const Photography = ({ photosData }) => {
   const [photos, setPhotos] = useState([]);

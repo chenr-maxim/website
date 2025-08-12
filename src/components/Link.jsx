@@ -1,5 +1,5 @@
-import React from "react";
 import NextLink from "next/link";
+import React from "react";
 
 import styles from "@/src/styles/Link.module.scss";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import { workExperienceLabels } from "../constants/labels";
 
+import { workExperienceLabels } from "../constants/labels";
 import styles from "../styles/Work.module.scss";
 
 const Experience = ({ title, company, date, description }) => {

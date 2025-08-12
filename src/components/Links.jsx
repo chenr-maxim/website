@@ -1,8 +1,9 @@
 import React from "react";
+
 import styles from "@/src/styles/Links.module.scss";
-import { socialLinks } from "../constants/labels";
+
 import Link from "./Link";
-import NextLink from "next/link";
+import { socialLinks } from "../constants/labels";
 
 const linksList = socialLinks.map((link) => {
   return (

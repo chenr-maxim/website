@@ -1,9 +1,9 @@
+import { usePathname } from "next/navigation";
 import React from "react";
+
 // import Link from "next/link";
 import Link from "@/src/components/Link";
-import { usePathname } from "next/navigation";
 import { navbarLinks } from "@/src/constants/labels.js";
-
 import styles from "@/src/styles/NavBar.module.scss";
 
 const NavBar = () => {

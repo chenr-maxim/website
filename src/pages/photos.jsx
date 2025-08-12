@@ -1,6 +1,7 @@
-import React, { Suspense } from "react";
-import Photography from "@/src/components/Photography";
 import axios from "axios";
+import React, { Suspense } from "react";
+
+import Photography from "@/src/components/Photography";
 
 export default function photos({ photosData }) {
   return (

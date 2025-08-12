@@ -1,5 +1,3 @@
-import Layout from "@/src/components/Layout";
-import localFont from "next/font/local";
 import { CenteredLayout } from "@/src/components/Layout";
 
 import "../styles/globals.css";

@@ -1,0 +1,122 @@
+0 verbose cli /Users/maxchen/.nvm/versions/node/v20.19.2/bin/node /Users/maxchen/.nvm/versions/node/v20.19.2/bin/npm
+1 info using npm@11.5.2
+2 info using node@v20.19.2
+3 silly config load:file:/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/maxchen/Desktop/code/website/.npmrc
+5 silly config load:file:/Users/maxchen/.npmrc
+6 silly config load:file:/Users/maxchen/.nvm/versions/node/v20.19.2/etc/npmrc
+7 verbose title npm i prettier @ianvs/prettier-plugin-sort-imports eslint-plugin-unused-imports eslint-plugin-import
+8 verbose argv "i" "--save-dev" "prettier" "@ianvs/prettier-plugin-sort-imports" "eslint-plugin-unused-imports" "eslint-plugin-import"
+9 verbose logfile logs-max:10 dir:/Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_29_39_106Z-
+10 verbose logfile /Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_29_39_106Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest prettier@*
+15 silly packumentCache full:https://registry.npmjs.org/prettier cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/prettier 191ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/prettier set size:undefined disposed:false
+18 silly fetch manifest @ianvs/prettier-plugin-sort-imports@*
+19 silly packumentCache full:https://registry.npmjs.org/@ianvs%2fprettier-plugin-sort-imports cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@ianvs%2fprettier-plugin-sort-imports 124ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@ianvs%2fprettier-plugin-sort-imports set size:undefined disposed:false
+22 silly fetch manifest @prettier/plugin-oxc@^0.0.4
+23 silly packumentCache full:https://registry.npmjs.org/@prettier%2fplugin-oxc cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/@prettier%2fplugin-oxc 62ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/@prettier%2fplugin-oxc set size:undefined disposed:false
+26 silly fetch manifest @vue/compiler-sfc@2.7.x || 3.x
+27 silly packumentCache full:https://registry.npmjs.org/@vue%2fcompiler-sfc cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/@vue%2fcompiler-sfc 84ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/@vue%2fcompiler-sfc set size:undefined disposed:false
+30 silly fetch manifest content-tag@^4.0.0
+31 silly packumentCache full:https://registry.npmjs.org/content-tag cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/content-tag 45ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/content-tag set size:undefined disposed:false
+34 silly fetch manifest prettier-plugin-ember-template-tag@^2.1.0
+35 silly packumentCache full:https://registry.npmjs.org/prettier-plugin-ember-template-tag cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/prettier-plugin-ember-template-tag 52ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/prettier-plugin-ember-template-tag set size:undefined disposed:false
+38 silly fetch manifest eslint-plugin-unused-imports@*
+39 silly packumentCache full:https://registry.npmjs.org/eslint-plugin-unused-imports cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/eslint-plugin-unused-imports 60ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/eslint-plugin-unused-imports set size:undefined disposed:false
+42 silly fetch manifest @typescript-eslint/eslint-plugin@^8.0.0-0 || ^7.0.0 || ^6.0.0 || ^5.0.0
+43 silly packumentCache full:https://registry.npmjs.org/@typescript-eslint%2feslint-plugin cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2feslint-plugin 298ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/@typescript-eslint%2feslint-plugin set size:undefined disposed:false
+46 silly fetch manifest @typescript-eslint/parser@^8.39.1
+47 silly packumentCache full:https://registry.npmjs.org/@typescript-eslint%2fparser cache-miss
+48 http cache https://registry.npmjs.org/@typescript-eslint%2fparser 14ms (cache hit)
+49 silly packumentCache full:https://registry.npmjs.org/@typescript-eslint%2fparser set size:14098573 disposed:false
+50 silly fetch manifest eslint@8.39.0
+51 silly packumentCache full:https://registry.npmjs.org/eslint cache-miss
+52 http cache https://registry.npmjs.org/eslint 3ms (cache hit)
+53 silly packumentCache full:https://registry.npmjs.org/eslint set size:1824640 disposed:false
+54 silly fetch manifest eslint@^8.57.0 || ^9.0.0
+55 silly packumentCache full:https://registry.npmjs.org/eslint cache-miss
+56 http cache https://registry.npmjs.org/eslint 3ms (cache hit)
+57 silly packumentCache full:https://registry.npmjs.org/eslint set size:1824640 disposed:false
+58 silly fetch manifest typescript@>=4.8.4 <6.0.0
+59 silly packumentCache full:https://registry.npmjs.org/typescript cache-miss
+60 http cache https://registry.npmjs.org/typescript 11ms (cache hit)
+61 silly packumentCache full:https://registry.npmjs.org/typescript set size:14540369 disposed:false
+62 silly fetch manifest jiti@*
+63 silly packumentCache full:https://registry.npmjs.org/jiti cache-miss
+64 http cache https://registry.npmjs.org/jiti 4ms (cache hit)
+65 silly packumentCache full:https://registry.npmjs.org/jiti set size:373202 disposed:false
+66 silly fetch manifest eslint-plugin-import@*
+67 silly packumentCache full:https://registry.npmjs.org/eslint-plugin-import cache-miss
+68 http cache https://registry.npmjs.org/eslint-plugin-import 2ms (cache hit)
+69 silly packumentCache full:https://registry.npmjs.org/eslint-plugin-import set size:484928 disposed:false
+70 silly placeDep ROOT @ianvs/prettier-plugin-sort-imports@4.6.1 OK for: website@0.1.0 want: *
+71 silly placeDep ROOT prettier@3.6.2 OK for: @ianvs/prettier-plugin-sort-imports@4.6.1 want: 2 || 3 || ^4.0.0-0
+72 silly placeDep ROOT eslint-plugin-import@2.32.0 REPLACE for: website@0.1.0 want: *
+73 verbose stack Error: could not resolve
+73 verbose stack     at PlaceDep.failPeerConflict (/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:503:25)
+73 verbose stack     at new PlaceDep (/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:157:21)
+73 verbose stack     at #buildDepStep (/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:933:18)
+73 verbose stack     at async Arborist.buildIdealTree (/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:182:7)
+73 verbose stack     at async Promise.all (index 1)
+73 verbose stack     at async Arborist.reify (/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:126:5)
+73 verbose stack     at async Install.exec (/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/lib/commands/install.js:150:5)
+73 verbose stack     at async Npm.exec (/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/lib/npm.js:208:9)
+73 verbose stack     at async module.exports (/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/lib/cli/entry.js:67:5)
+74 error code ERESOLVE
+75 error ERESOLVE could not resolve
+76 error
+77 error While resolving: website@0.1.0
+77 error Found: @typescript-eslint/parser@5.62.0[2m[22m
+77 error [2mnode_modules/@typescript-eslint/parser[22m
+77 error   @typescript-eslint/parser@"^5.42.0" from eslint-config-next@13.4.0[2m[22m
+77 error   [2mnode_modules/eslint-config-next[22m
+77 error     eslint-config-next@"13.4.0" from the root project
+77 error
+77 error Could not resolve dependency:
+77 error [34mdev[39m eslint-plugin-unused-imports@"*" from the root project
+77 error
+77 error Conflicting peer dependency: @typescript-eslint/parser@8.39.1[2m[22m
+77 error [2mnode_modules/@typescript-eslint/parser[22m
+77 error   [95mpeer[39m @typescript-eslint/parser@"^8.39.1" from @typescript-eslint/eslint-plugin@8.39.1[2m[22m
+77 error   [2mnode_modules/@typescript-eslint/eslint-plugin[22m
+77 error     peerOptional @typescript-eslint/eslint-plugin@"^8.0.0-0 || ^7.0.0 || ^6.0.0 || ^5.0.0" from eslint-plugin-unused-imports@4.1.4[2m[22m
+77 error     [2mnode_modules/eslint-plugin-unused-imports[22m
+77 error       [34mdev[39m eslint-plugin-unused-imports@"*" from the root project
+77 error
+77 error Fix the upstream dependency conflict, or retry
+77 error this command with --force or --legacy-peer-deps
+77 error to accept an incorrect (and potentially broken) dependency resolution.
+78 error
+78 error
+78 error For a full report see:
+78 error /Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_29_39_106Z-eresolve-report.txt
+79 silly unfinished npm timer reify 1754990979292
+80 silly unfinished npm timer reify:loadTrees 1754990979292
+81 silly unfinished npm timer idealTree:buildDeps 1754990979339
+82 silly unfinished npm timer idealTree:#root 1754990979339
+83 verbose cwd /Users/maxchen/Desktop/code/website
+84 verbose os Darwin 24.6.0
+85 verbose node v20.19.2
+86 verbose npm  v11.5.2
+87 verbose exit 1
+88 verbose code 1
+89 error A complete log of this run can be found in: /Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_29_39_106Z-debug-0.log

@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "@/src/components/NavBar";
 
+import NavBar from "@/src/components/NavBar";
 import styles from "@/src/styles/Layout.module.scss";
 
 export const CenteredLayout = ({ children }) => {

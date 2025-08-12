@@ -1,9 +1,10 @@
-import React from "react";
 import Image from "next/image";
-import aboutPic from "@/public/assets/photos/about_me.jpg";
-import Link from "../components/Link";
+import React from "react";
 
+import aboutPic from "@/public/assets/photos/about_me.jpg";
 import styles from "@/src/styles/About.module.scss";
+
+import Link from "../components/Link";
 
 const About = () => {
   return (

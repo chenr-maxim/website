@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import Slideshow from "./Slideshow";
+import React from "react";
+
 import Link from "@/src/components/Link";
 
+import Slideshow from "./Slideshow";
 import {
   coffeeNoteImageUrls,
   notedImageUrls,
   socialTreeUrl,
 } from "../constants/images";
 import { projectLabels } from "../constants/labels";
-
 import styles from "../styles/Projects.module.scss";
 
 const Projects = () => {

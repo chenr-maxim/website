@@ -1,0 +1,18 @@
+0 verbose cli /Users/maxchen/.nvm/versions/node/v20.19.2/bin/node /Users/maxchen/.nvm/versions/node/v20.19.2/bin/npm
+1 info using npm@11.5.2
+2 info using node@v20.19.2
+3 silly config load:file:/Users/maxchen/.nvm/versions/node/v20.19.2/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/maxchen/Desktop/code/website/.npmrc
+5 silly config load:file:/Users/maxchen/.npmrc
+6 silly config load:file:/Users/maxchen/.nvm/versions/node/v20.19.2/etc/npmrc
+7 verbose title npm run format
+8 verbose argv "run" "format"
+9 verbose logfile logs-max:10 dir:/Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_31_44_281Z-
+10 verbose logfile /Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_31_44_281Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd /Users/maxchen/Desktop/code/website
+13 verbose os Darwin 24.6.0
+14 verbose node v20.19.2
+15 verbose npm  v11.5.2
+16 verbose exit 0
+17 info ok
