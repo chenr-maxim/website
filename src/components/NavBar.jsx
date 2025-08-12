@@ -1,16 +1,15 @@
-import { usePathname } from "next/navigation";
-import React from "react";
+import { useRouter } from 'next/router';
+import React from 'react';
 
-// import Link from "next/link";
-import Link from "@/src/components/Link";
-import { navbarLinks } from "@/src/constants/labels.js";
-import styles from "@/src/styles/NavBar.module.scss";
+import Link from '@/src/components/Link';
+import { navbarLinks } from '@/src/constants/labels';
+import styles from '@/src/styles/NavBar.module.scss';
 
 const NavBar = () => {
-  const pathname = usePathname();
+  const { pathname } = useRouter();
 
   const navbarList = navbarLinks.map((link) => {
-    const activeTab = link.id === pathname;
+    const activeTab = pathname === link.id || pathname.startsWith(`${link.id}/`);
 
     return (
       <li key={link.id}>

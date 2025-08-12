@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import styles from "@/src/styles/Links.module.scss";
+import styles from '@/src/styles/Links.module.scss';
 
-import Link from "./Link";
-import { socialLinks } from "../constants/labels";
+import Link from './Link';
+import { socialLinks } from '../constants/labels';
+
 
 const linksList = socialLinks.map((link) => {
   return (
@@ -16,7 +17,7 @@ const linksList = socialLinks.map((link) => {
 const Links = () => {
   return (
     <div className={styles.linksContainer}>
-      <Link href="/">
+      <Link href='/'>
         <h1>Maxim Chen</h1>
       </Link>
 

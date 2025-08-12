@@ -1,17 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from 'react';
 
-import styles from "@/src/styles/Photography.module.scss";
+import styles from '@/src/styles/Photography.module.scss';
 
-import Photo from "./Photo";
+import Photo from './Photo';
 
-const Photography = ({ photosData }) => {
-  const [photos, setPhotos] = useState([]);
 
-  useEffect(() => {
-    setPhotos(photosData);
-  }, [photosData]);
-
-  const photoList = photos.map((photo) => {
+const Photography = ({ photosData = [] }) => {
+  const photoList = photosData.map((photo) => {
     return <Photo key={photo.id} photo={photo} />;
   });
 

@@ -1,32 +1,28 @@
-import Image from "next/image";
-import React, { useCallback, useEffect, useState } from "react";
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
 
-import styles from "@/src/styles/Slideshow.module.scss";
+import styles from '@/src/styles/Slideshow.module.scss';
 
-const Slideshow = ({ imageUrls }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [currentImageUrls, setCurrentImageUrls] = useState(imageUrls);
-
-  const switchImages = useCallback(() => {
-    if (currentImageIndex < currentImageUrls.length - 1) {
-      setCurrentImageIndex(currentImageIndex + 1);
-    } else {
-      setCurrentImageIndex(0);
-    }
-  }, [currentImageUrls, currentImageIndex]);
+const Slideshow = ({ imageUrls = [] }) => {
+  const [idx, setIdx] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(switchImages, 4000);
-    return () => clearInterval(interval);
-  }, [switchImages]);
+    if (!imageUrls.length) return;
+    const id = setInterval(() => {
+      setIdx((i) => (i + 1) % imageUrls.length);
+    }, 4000);
+    return () => clearInterval(id);
+  }, [imageUrls]);
+
+  if (!imageUrls.length) return null;
 
   return (
     <div className={styles.slideshowContainer}>
       <Image
         fill
-        style={{ objectFit: "contain" }}
-        alt="slideshow images"
-        src={currentImageUrls[currentImageIndex]}
+        style={{ objectFit: 'contain' }}
+        alt='Project slideshow image'
+        src={imageUrls[idx]}
       />
     </div>
   );

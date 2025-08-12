@@ -5,14 +5,14 @@
 4 silly config load:file:/Users/maxchen/Desktop/code/website/.npmrc
 5 silly config load:file:/Users/maxchen/.npmrc
 6 silly config load:file:/Users/maxchen/.nvm/versions/node/v20.19.2/etc/npmrc
-7 verbose title npm config get registry
-8 verbose argv "config" "get" "registry"
-9 verbose logfile logs-max:10 dir:/Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_28_36_930Z-
-10 verbose logfile /Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_28_36_930Z-debug-0.log
-11 silly logfile done cleaning log files
+7 verbose title npm commit
+8 verbose argv "commit" "--message" "refactor: clean up and refactor files"
+9 verbose logfile logs-max:10 dir:/Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_42_08_699Z-
+10 verbose logfile /Users/maxchen/Desktop/code/website/.npm-cache/_logs/2025-08-12T09_42_08_699Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
 12 verbose cwd /Users/maxchen/Desktop/code/website
 13 verbose os Darwin 24.6.0
 14 verbose node v20.19.2
 15 verbose npm  v11.5.2
-16 verbose exit 0
-17 info ok
+16 verbose exit 1
+17 verbose code 1
