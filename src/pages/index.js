@@ -1,28 +1,27 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import Hero from "@/src/components/Hero";
+import Hero from '@/src/components/Hero';
 
 const HeadHTML = () => {
   return (
     <Head>
       <title>Maxim Chen - Software Engineer</title>
+      <meta property='og.title' content='Maxim Chen - Software Engineer' key='title' />
       <meta
-        property="og.title"
-        content="Maxim Chen - Software Engineer"
-        key="title"
+        property='og.description'
+        content='This is the official portfolio website for Maxim Chen. Maxim is a front-end software engineer based in the San Francisco Bay Area'
+        key='description'
       />
-      <meta
-        property="og.description"
-        content="This is the official portfolio website for Maxim Chen. Maxim is a front-end software engineer based in the San Francisco Bay Area"
-        key="description"
-      />
-      <meta property="og.type" content="website" key="type" />
-      <meta property="og.url" content="https://maximchen.com" key="url" />
-      {/* <meta property="og.image"></meta> */}
-      <link rel="icon" type="image/jpg" href="/static/favicon.png" />
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="author" content="Maxim Chen" />
+      <meta property='og.type' content='website' key='type' />
+      <meta property='og.url' content='https://maximchen.com' key='url' />
+      <meta property='og.image' content='/public/assets/photos/self/hero_profile_pic.jpg' />
+      <meta property='og:image:width' content='1200'></meta>
+      <meta property='og:image:height' content='630'></meta>
+      <meta name='og:site_name' content='Maxim Chen Portfolio' />
+      <link rel='icon' type='image/jpg' href='/static/favicon.png' />
+      <meta charset='utf-8' />
+      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+      <meta name='author' content='Maxim Chen' />
     </Head>
   );
 };
