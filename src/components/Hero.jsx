@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import profilePic from '@/public/assets/photos/hero_profile_pic.jpg';
+import profilePic from '@/public/assets/photos/self/hero_profile_pic.jpg';
 import Link from '@/src/components/Link';
 import styles from '@/src/styles/Hero.module.scss';
 

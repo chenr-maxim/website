@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import aboutPic from "@/public/assets/photos/about_me.jpg";
+import aboutPic from "@/public/assets/photos/self/about_me.jpg";
 import styles from "@/src/styles/About.module.scss";
 
 import Link from "../components/Link";

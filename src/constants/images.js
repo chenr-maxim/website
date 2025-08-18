@@ -13,3 +13,6 @@ export const notedImageUrls = [
 export const socialTreeUrl = [
   "/assets/projects/socialtree/socialtree_project.png",
 ];
+
+export const feedPhotos = [
+];
